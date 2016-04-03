@@ -1,0 +1,26 @@
+<%= stylesheet_link_tag "ui", media: "all" %>
+
+<h1>Southwest Auto-Confirmation</h1>
+
+<%= form_for :reservation, url: reservation_path do |f| %>
+
+    <p>
+        <%= f.label :first_name %>
+        <%= f.text_field :first_name %>
+    </p>
+
+    <p>
+        <%= f.label :last_name %>
+        <%= f.text_field :last_name %>
+    </p>
+
+    <p>
+        <%= f.label :confirmation %>
+        <%= f.text_field :confirmation %>
+    </p>
+
+    <p>
+        <%= f.submit %>
+    </p>
+
+<% end %>
